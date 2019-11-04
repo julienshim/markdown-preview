@@ -1,0 +1,97 @@
+@import "./base/settings";
+@import "./base/base";
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+#main {
+  height: 100vh;
+  width: 100vw;
+}
+
+#editor-container {
+  background-color: #333;
+  height: 100%;
+  width: 100%;
+  padding: 21.44px 0;
+}
+
+textarea {
+  background-color: #333;
+  border: none;
+  color: #ccc;
+  height: 100%;
+  outline: none;
+  resize: none;
+  width: 100%;
+  padding: 10%;
+}
+
+#preview-container {
+  background-color: #fff;
+  color: #333;
+  height: 100%;
+  padding: 5%;
+  width: 100%;
+  overflow: auto;
+}
+
+.hidden {
+  z-index: 0;
+}
+
+.visible {
+  z-index: 1;
+}
+
+#toggle {
+  background-color: #02baff;
+  border-top: 2px solid #ccc;
+  bottom: 0;
+  height: 36px;
+  padding-top: 9px;
+  position: absolute;
+  text-align: center;
+  width: 100vw;
+  z-index: 2;
+}
+
+// Markdown Format
+
+code {
+  background: #f6f8fa;
+  padding: 9px;
+  line-height: 1.45;
+  font-size: 85%;
+}
+
+@media screen and (min-width: 768px) {
+  #toggle {
+    display: none;
+  }
+  #main {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  #editor-container,
+  #preview-container {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #editor-container,
+  #preview-container {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  #preview-container {
+    padding: 10%;
+  }
+}
