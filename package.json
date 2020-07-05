@@ -22,15 +22,15 @@
   "dependencies": {
     "css-loader": "^3.0.0",
     "live-server": "^1.2.1",
-    "marked": "^0.7.0",
+    "marked": "^1.1.0",
     "node-sass": "^4.10.0",
     "normalize.css": "^8.0.0",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-modal": "^3.8.2",
-    "sass-loader": "^8.0.0",
+    "sass-loader": "^9.0.1",
     "style-loader": "^1.0.1",
-    "validator": "^12.1.0",
+    "validator": "^13.1.1",
     "webpack": "^4.35.3",
     "webpack-dev-server": "^3.7.2"
   },
